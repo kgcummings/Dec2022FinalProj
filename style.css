@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+    color: white;
+    padding:5px;
+    font-family: bd-supper, sans-serif;
+}
+
+h1{
+font-family: bd-supper, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size:20vh;
+line-height: .8;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+button{
+    font-family: bd-supper, sans-serif;
+font-weight: 700;
+font-style: normal;
+background-color: black;
+color: white;
+border-radius: 3vh;
+border-width: 1vh;
+font-size: 9vh;
+padding: 2vh;
+}
+
+.sidepanel {
+    height: 20vh; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    float:right;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 20%;
+    right:15%;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    font-size:4vh;
+    border: 7px white;
+    }
+
+.sidepanel .closebtn {
+position: absolute;
+top: 0;
+ right: 25px;
+font-size: 5vh;
+margin-left: 50px;
+color:white;
+text-decoration: none;
+}
+
+#content{
+    font-size:7vh;
+    font-weight: 700;
+}
+
+
+.stickimg{
+   width:55vh;
+   height:55vh;
+   transition: transform .2s;
+}
+
+.stickimg:hover{
+    -ms-transform: scale(1.08); /* IE 9 */
+    -webkit-transform: scale(1.08); /* Safari 3-8 */
+    transform: scale(1.08); 
+}
