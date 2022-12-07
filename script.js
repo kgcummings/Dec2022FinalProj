@@ -26,9 +26,18 @@ var client = contentful.createClient({
 });
 
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "70vh";
+  document.getElementById("mySidepanel").style.width = "45%";
   }
   
   function closeNav() {
     document.getElementById("mySidepanel").style.width = "0";
   } 
+
+  window.onscroll = function () {
+    circleRotate();
+};
+
+  function circleRotate(){
+    let image = document.getElementById("circle");
+    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+  }
