@@ -1,6 +1,6 @@
 var client = contentful.createClient({
-    space: '1zc3v8j45y0t',
-    accessToken: 'ApVKNghAt58mmqLilen09IAFmpa09HeC0tRWuaDnjg0',
+    space: '[space]',
+    accessToken: '[accss]',
   });
 
 
