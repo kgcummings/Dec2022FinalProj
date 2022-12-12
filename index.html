@@ -10,31 +10,61 @@
 </head>
 <body>
     <div id="header">
-        <div id="circle"></div>
-        <h1><span style="color:gray;font-size: 6vh;">THE</span> <br> NYC <br> STICKER <br>PROJECT</h1>
+        <div id="circle">
+            <div class="circlepng"><img src="" alt="" id="img5"></div>
+            <div class="circlepng"><img src="" alt="" id="img4"></div>
+            </div>
+        </div>
+        <h1><span style="color:gray;font-size: 4vw;">THE</span><br>
+            <span class="coolhover">NYC</span> <br>
+            <span class="coolhover">STICKER</span><br>
+            <span class="coolhover">PROJECT</span></h1>
         <button id="aboutButton" onclick="openNav()">ABOUT</button>
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-           The NYC Sticker Project is a nonprofit community project focusing on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-          </div>
+        <div id="desktopsidepanel">
+                <div id="mySidepanel" class="sidepanel" style="border:.3vw solid white;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            The NYC Sticker Project is a nonprofit community project focusing on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </div>
+        </div>
     </div>
-    <br>
-    <br>
+    <div id="mobilesidepanel">
+        <div id="mySidepanel" class="sidepanel" style="border:.3vw solid white;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         The NYC Sticker Project is a nonprofit community project focusing on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </div>
+    </div>
+ <div id="spacebox"></div>
     <div id="content">
-        BROWSE THE ARCHIVE
+        OUR FEATURED STICKERS!
         <div id="firstRow">
             <div id="sticker">
                 <center>
-                    <img src="" alt="" id="img1">
+                    <img src="" alt="" id="img1" onclick="textGrab()">
+                    <div id="desc1"><p> </p></div>
                     <img src="" alt="" id="img2">
+                    <div id="desc2"><p> </p></div>
                     <img src="" alt="" id="img3">
+                    <div id="desc3"><p> </p></div>
+                    </div>
                 </center>
             </div>
-        </div>
-        <div id="secondRow">
+            BROWSE OUR ARCHIVE:
+            <div id="secondRow">
+                <div id="sticker">
+                    <center>
+                        <img src="" alt="" id="img6">
+                        <div id="desc6"><p> </p></div>
+                    </center>
+                </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="script.js"></script>
+    <footer>
+        <center>
+            <a href="index.html">HOME</a> | <a href="about.html">ABOUT</a> | HI | ETC 
+        </center>
+    </footer>
 </body>
+
 </html>
