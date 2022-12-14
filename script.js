@@ -22,9 +22,9 @@ var client = contentful.createClient({
       img.classList.add('stickimg')
       imgcount++;
     })
-    let desccount = 1;
+    let descCount = 1;
     entries.items.forEach(entry => {
-        let id = `desc${desccount}`
+        let id = `desc${descCount}`
       let desc = document.getElementById(id)
       desc.textContent = entry.fields.description
       desc.classList.add('description')

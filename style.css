@@ -1,21 +1,59 @@
+.row {
+  margin: 2vw -4vw;
+}
 
+.row,
+.row > .column {
+  padding: 1vw;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  background-color: black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 /*TEXT*/
 body{
     background-color: black;
     color: white;
     padding:5px;
     font-family: bd-supper, sans-serif;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+  opacity: 1;
+  }
+  }
+
 footer{
-    background-color: gray;
     text-transform: uppercase;
     font-size: 4vh;
 }
 
 a:visited{
-    color:black;
+    color:gray;
 }
+
 h1{
 font-family: bd-supper, sans-serif;
 font-weight: 600;
@@ -91,18 +129,20 @@ text-decoration: none;
   }
 
   #circle div:nth-child(2){
-    margin: 12vw 0 0 27vw;
+    margin: 8vw 0 0 27vw;
   }
 
   
 .stickimg{
-   aspect-ratio: 1 / 1;
    height:25vw;
+   width: 25vw;
    transition: transform .2s;
 }
 
 .description{
-  font-size: 1.5vw;
+  font-size: 2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 #circle {
@@ -132,14 +172,21 @@ text-decoration: none;
 
 @media(max-width: 500px) {
     #circle {
-        width: 80vw;
-        height:80vw;
+        width: 90vw;
+        height:90vw;
         aspect-ratio: 1 / 1;
         border-width: 2.5vw;
     }
     .sidepanel {
         font-size:2.25vw;
         height: 40vw; 
+}
+
+.stickimg{
+  aspect-ratio: 1 / 1;
+  height:35vw;
+  width:35vw;
+  transition: transform .2s;
 }
 
 #desktopsidepanel{
@@ -181,5 +228,8 @@ h1{
       #spacebox{
         padding:30vw;
       }
-    
+   
+      #circle div:nth-child(2){
+        margin: 12vw 0 0 27vw;
+      }
 }
